@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arte</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Rajdhani&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header id="bandeau" class="bandeau">
+		<div id=bloc1>
+			<div id="bloc11" class= "dimLogoTete">
+				<img src="images/logo.png"/>
+			</div>
+			<div id = "bloc12" class="dimBurger bloc12">
+				<a href="#"><img src="images/bars-solid.svg"></a>
+			</div>
+			<nav id = "bloc13" class=" uppercase fontBold bloc13">
+				<a href="#">A propos</a>
+				<a href="#">Ateliers de creation</a>
+				<a href="#">Mobilier</a>
+				<a href="#">Luminaires</a>
+				<a href="#">Objets d'art</a>
+				<a href="#">Actus</a>
+			</nav>
+		</div>
+		<div id="bloc14" class="">
+			<span class="fontSize50 fontBold">artenobilia</span><br/><span class="fontSize20">l'excellence française <br/>des métiers d'art</span>
+		</div>
+	</header>
+	<br/>
+	<section id="catalogue">
+		<div id="bloc3">
+			<div id="bloc31" class="fontSize20 uppercase textCenter fontBold">
+				<p>catalogue</p>
+			</div>
+			<div id="bloc32">
+				<div id="bloc321">
+					<div id="bloc3211"> <!--contient 2 images-->
+						<img src="images/mobilier.jpg"/>
+						<p class="uppercase textCenter fontBold">mobilier</p>
+					</div>
+					<div id="bloc3212">
+						<img src="images/exterieur.jpg"/>
+						<p class="uppercase textCenter fontBold fontBlanc">extérieur</p>
+					</div>
+				</div>
+
+				<div id="bloc322"> <!--contient 3 images-->
+					<div id="bloc3221">
+						<img src="images/luminaires.jpg"/>
+						<p class="uppercase textCenter fontBold">luminaires</p>
+					</div>
+					
+					<div id="bloc3222"> <!--contient 2 images-->
+						<div id="bloc32221">
+							<img src="images/bijoux.jpg"/>
+							<p class="uppercase textCenter fontBold">bijoux</p>
+						</div>
+						<div id="bloc32222">
+							<img src="images/arts-table.jpg"/>
+							<p class="uppercase textCenter fontBold fontBlanc">art de la table</p>
+						</div>					
+					</div>				
+				</div>
+			</div>
+		</div>
+	</section>
+	<br/>
+
+	<section id="nouvProduit">
+		<div id="bloc4">
+			<div id="bloc41" class=" fontSize20 uppercase textCenter fontBold">
+				<p>nouveaux produits</p>
+			</div>
+			<div id="bloc42">
+				<div id="bloc421">
+					<img src="images/new-1.jpg"/>		
+					<p class="uppercase textCenter fontBold">vases trio "chaos"</p>
+				</div>
+				<div id="bloc421">
+					<img src="images/new-2.jpg"/>
+					<p class="uppercase textCenter fontBold">sculpture murale "arapeda"</p>
+				</div>
+				<div id="bloc421">
+					<img src="images/new-3.jpg"/>
+					<p class="uppercase textCenter fontBold">vase tube "bambou"</p>
+				</div>
+				<div id="bloc421">
+					<img src="images/new-4.jpg"/>
+					<p class="uppercase textCenter fontBold">vase tube "bambou"</p>
+				</div>	
+			</div>
+
+		</div>
+	</section>
+	<br/>
+	<br/>
+	<section id="expo">
+		<div id="bloc5">
+			<div id="bloc51">
+				<div id="bloc511"><img src="images/expo-vituelle.png"/></div>
+				<div id="bloc512">
+					<span class="uppercase fontBold fontSize14">art up ! lille, foire internationale d'art contemporain</span><br/>
+					<span>Art Up! reportée en juin. La création contemporaine des Métiers d'art s'exposera pour la première fois à ART UP! Lille, foire internationale d'Art contemporain, du 25 au 28 juin 2020</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br/>
+
+
+	<section id="formulaire">
+		<div id="bloc6">
+			<div id="bloc61">
+				<p class="fontSize20 fontBold uppercase textCenter">Contactez-nous</p>
+			</div>
+			<form>
+				<div id="bloc62">
+					<div id="bloc621"><label for="sujet">Sujet :</label></div>
+					<div id="bloc622"><input type="text" name="sujet" value="Service client"/></div>
+				</div>
+				<div  id="bloc63">
+					<div id="bloc631"><label for="adresse">Adresse e-mail :</label></div>
+					<div id="bloc632"><input type="text" name="adresse" value="votre@email.com"/></div>
+				</div>
+				<div  id="bloc64">
+					<div id="bloc641"><label for="message">Message :</label></div>
+					<div id="bloc642"><textarea name="message">Comment pouvons-nous aider ?</textarea></div>
+				</div>
+				<div id="bloc65">
+					<input type="button" value="ENVOYER"/>
+				</div>
+			</form>
+		</div>
+	</section>
+	<br/>
+	<footer>
+		<div id="bloc7" class="bgCoul1">
+			<div id="bloc71"class="dimLogoPied"><img src="images/logo.png"/></div>
+			<div id="bloc72" class="dim-icon">
+				<img src="images/fb_icon-icons.com_65584.svg"/>
+				<img src="images/linkedin_icon-icons.com_65588.svg"/>
+				<img src="images/instagram_icon-icons.com_65586.svg"/>
+			</div>
+		</div>
+	</footer>
+	<br>
+	<br>
+</body>
+<script type="text/javascript">
+	// récupère l'id du burger dans une variable
+	var lienmenu = document.getElementById("bloc12");
+	// création d'une action sur click, lancement d'une fonction
+	lienmenu.addEventListener("click", menumobile);
+	//création d'une fonction qui crée une classe sur l'id de l'ul
+	//menu_navigation qui sera utilisé en css pour afficher ou pas la liste
+	function menumobile(){
+	var bloc2 = document.getElementById("bloc13");
+	var bloc3 = document.getElementById("bloc14");
+	//toggle : bascule affichage ou non
+	bloc2.classList.toggle("afficherbloc13");
+	bloc3.classList.toggle("afficherbloc14");
+	}
+</script>
+</html>

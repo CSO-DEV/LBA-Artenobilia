@@ -1,0 +1,466 @@
+/*Fichier css pour Artenobilia*/
+/*--- Outils paramètres communs---*/
+.styleOs {
+	font-family: "Open Sans", sans-serif;
+}
+.styleRajdhani {
+	font-family: "Rajdhani", sans-serif;
+}
+.bgCoul1{
+	background-color: #f6f3eb;
+}
+.bgCoul2{
+	background-color: #e3a939;
+}
+.bgCoul3{
+	background-color: #333333;
+}
+.fontBlanc{
+	color: #ffff;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.textCenter{
+	text-align: center;
+}
+.fontSize50{
+	font-size: 50px;
+}
+.fontBold{
+	font-weight:bolder;
+}
+.fontSize14{
+	font-size: 14px;
+}
+.fontSize20{
+	font-size: 20px;
+}
+.dimLogoTete img {
+	height: 50px;
+	width: 200px;
+}
+.dimLogoPied img {
+	height: 40px;
+	width: 150px;
+}
+.dimBurger img{
+	height: 40px;
+	width: 40px;
+	margin-top: 10px;
+}
+
+/*------ Paramètres par défaut -------*/
+body{
+	font-family: "Open Sans", sans-serif;
+	font-size: 12px;
+	margin: 0;
+	padding: 0 20px 0 20px;
+}
+
+
+/*------ Header : bloc 1 logo et menu -------*/
+/*Bloc conteneur général*/
+
+#bandeau{
+	background-image: url(images/header.jpg);
+	background-position: center,center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	display: flex;
+	position: relative;
+}
+/*Conteneur logo-burger-menu*/
+#bloc1{
+	background-color: white;
+	display: flex;
+	position: absolute;
+	width: 100%;
+}
+/*logo*/
+#bloc11{
+text-align: center;
+}
+/*burger*/
+#bloc12{
+	display: none;
+	text-align: center;
+}
+/*liste*/
+#bloc13{
+	display: flex;
+	flex-grow: 1;
+	flex-direction: row-reverse;
+}
+	/*Mise en fome des liens*/
+	#bloc13 a{
+		padding: 10px;
+		color: black;
+		text-decoration: none;
+		margin: auto 0;
+
+	}
+	#bloc13 a:hover{
+		color: #e3a939;
+	}
+
+#bloc14{
+	display: block;
+	text-align: center;
+	margin: auto;
+
+}
+
+
+/*-------------------------------------------*/
+/*------ Section catalogue - bloc 3 ---------*/
+/*Bloc 3 conteneur général*/		
+#bloc3{
+width: 80%;
+margin: auto;
+}
+#bloc3 img:hover{
+opacity: 0.55;
+}
+#bloc3 img{
+width: 100%;
+object-fit: fill;
+}
+	/*Sous-bloc : contient 2 conteneurs horizontal 1/3 - 2/3*/
+	#bloc32{
+	display: flex;
+	}		
+		/*Sous-bloc : contient 2 conteneurs image 1/3*/
+		#bloc321{
+		width: 33%;
+		display: flex;
+		flex-direction: column;
+		}
+
+			#bloc3211{
+			height: 64%;
+			padding: 10px;
+			display: flex;
+			position: relative;
+			}
+				#bloc3211 p{
+				padding: 5px;
+				position: absolute;
+				}
+
+			#bloc3212{
+			height: 33%;
+			padding: 10px;
+			display: flex;
+			position: relative;
+			}
+				#bloc3212 p{
+				padding: 5px;
+				position: absolute;
+				}
+
+		/*Sous-bloc : contient 2 conteneurs image 2/3*/
+		#bloc322{
+		width: 64%;
+		flex-grow: 1;
+		}
+				#bloc3221{
+				height: 33%;
+				padding: 10px;
+				display: flex;
+				position: relative;
+				}
+					#bloc3221 p{
+					padding: 5px;
+					position: absolute;
+					}				
+
+				#bloc3222{
+				height: 64%;
+				display: flex;
+				justify-content: center;
+				}
+					#bloc32221{
+					width: 50%;
+					padding: 10px;
+					display: flex;
+					position: relative;
+					}
+						#bloc32221 p{
+						padding: 5px;
+						position: absolute;
+						}
+					#bloc32222{
+					width: 50%;
+					padding: 10px;				
+					display: flex;
+					position: relative;
+					}
+						#bloc32222 p{
+						padding: 5px;
+						position: absolute;
+						}
+
+/*-------------------------------------------*/
+/*------ Section nouvProduit - bloc 4 -------*/
+/*Bloc 4 conteneur général*/
+#bloc4{
+	width: 80%;
+	margin: auto;
+	position: relative;
+}
+		/*sous bloc 4 conteneur titre, sous bloc image-text*/
+		#bloc42{
+			display: flex;
+			justify-content:center;
+			transform: scale(1);
+			transition: .3s ease-in-out;
+		}
+			/*Mise en page image*/
+			#bloc42 img{
+				width: 100%;
+				object-fit: fill;
+					}
+			/*Mise en page text*/					
+			#bloc42 p{
+				margin-top: 10px;
+			}	
+			/*Class sous bloc 4 conteneur image-text*/
+			#bloc421, #bloc422, #bloc423, #bloc424{
+				width: 100%;
+				margin: 20px;
+
+			}
+			/*Zoom sur les photos au passage de la souris*/
+			#bloc421 img:hover{
+				transform: scale(1.2);
+				box-shadow: black 3px 3px 5px;
+			}
+
+/*------ Section expo - bloc 5 -------*/
+/*Bloc 5 conteneur général avec fond image*/		
+
+#bloc5{
+	background-image: url(images/expo.jpg);
+	background-position: center,center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 400px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:center;
+}
+		/*Sous-bloc conteneur logo et texte*/	
+		#bloc51{
+			background-color: black;
+			width: 50%;
+			height: 70%;
+			padding: 10px;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content:center;
+			align-items: center;
+		}
+				/*Sous-bloc conteneur image logo */
+				#bloc511{
+					position: relative;
+					width: 80%;
+					margin: 5px;
+					display: flex;
+					justify-content:center;
+				}
+						/*Mise en forme du logo*/
+						#bloc511 img{
+							width: 60%;
+						}
+				/*Mise en forme du texte */
+				#bloc512{
+					margin: 5px;
+					color: white;
+					text-align: center;
+				}
+
+
+/*------ Section Contact - bloc 6 -------*/
+/*Bloc 6 conteneur général titre, etiquettes, champs et bouton*/
+#bloc6{
+		margin: 0 auto;
+		width: 90%;
+		position: relative;
+}
+	/*Sous-bloc : positionnement des étiquettes et champs*/
+	#bloc62, #bloc63, #bloc64{
+		display: flex;
+		justify-content: center;
+		margin: 5px auto;
+	}
+		/*Sous-blocs : dimensionnement des blocs étiquettes */
+		#bloc621, #bloc631, #bloc641{
+			width: 15%;
+			padding-right: 5px;
+		}
+		/*Sous-bloc : dimensionnement des blocs champs */
+		#bloc622, #bloc632, #bloc642{		
+			width: 60%;
+		}
+			/*dimensionnement champs type input*/
+			#bloc622 input, #bloc632 input{
+				width: 80%;
+			}
+			/*dimensionnement champs type textarea*/			
+			#bloc642 textarea{
+				width: 80%;
+				height: 60px;
+			}
+	}
+	/*Sous-bloc : positionnement du bouton centré*/
+	#bloc65{
+		display: flex;
+	}
+		/*Passage en bloc et centrage automatique*/
+		#bloc65 input{
+			display: block;
+			margin: auto;
+			background:black;
+			color:white;
+	}
+	
+/*------ Footer bloc 7 -------*/
+/*Bloc conteneur général */
+#bloc7{
+	height: 150px;
+}
+		/*Sous bloc logo contenant l'image */
+		#bloc71{
+			display: flex;
+			justify-content:center;
+			padding: 20px;
+		}
+		/*Sous bloc icon contenant les 3 icones */
+		#bloc72{
+			display: flex;
+			justify-content:center;
+		}
+				/*Mise en forme des 3 icones */
+				#bloc72 img{
+					height: 35px;
+					width: 35px;
+					margin: 6px;
+				}
+				#bloc72 img:hover{
+					background-color: #e3a939;
+				}
+
+/*-------------- Responsive --------------*/
+
+@media only screen and (max-width: 844px) {
+
+.bloc13{
+opacity: 0;
+height: 0px;
+}
+.afficherbloc13{
+	opacity: 1;	
+	}
+.afficherbloc14{
+	visibility: hidden;	
+}
+.bloc14{
+	visibility: visible;		
+}
+
+#bandeau{
+	background-image: url(images/header.jpg);
+	background-position: center,center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	display: flex;
+	position: relative;
+}
+/*Conteneur logo-burger-menu*/
+#bloc1{
+	background-color: white;
+	display: flex;
+	position: absolute;
+	width: 100%;
+	flex-direction: column;
+}
+/*logo*/
+#bloc11{
+text-align: center;
+}
+/*burger*/
+#bloc12{
+	display: block;
+	text-align: center;
+}
+/*liste*/
+#bloc13{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	}
+	/*Mise en fome des liens*/
+	#bloc13 a{
+		padding: 10px;
+		color: white;
+		text-decoration: none;
+		background-color: #333333;
+		border:1px solid white;
+		margin: 0;
+	}
+	#bloc13 a:hover{
+		color: #e3a939;
+	}
+
+#bloc14{
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 640px) {
+#bloc32{
+	flex-direction: column;
+	align-items: center;
+}
+#bloc321{
+	width: 80%;
+	margin: auto;
+}
+
+#bloc322{
+	width: 80%;
+	margin: auto;
+}
+
+#bloc3222{
+	flex-direction: column;
+	align-items: center;
+}
+
+#bloc32221{
+	width: 94%;
+}
+
+#bloc32222{
+	width: 94%;
+}
+#bloc42{
+	width: 60%;
+	margin: auto;
+	flex-direction: column;
+	align-items: center;	
+}
+}
